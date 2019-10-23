@@ -19,7 +19,7 @@ def gaussian(u, m, s):
 
 def main(n, m, s):
     seed(0xc0ffee)
-    u = uniform(size=n)
+    u = sorted(uniform(size=n))
     print(u)
     g = gaussian(u, m, s)
     i = search(g, 0.0)   #find the index of the item closest to zero
